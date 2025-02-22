@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="AD.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -102,8 +103,24 @@
         }
         .lang-type {
             background-color: #8985EC;
-            padding: 5px;
+            padding: 2px;
             border-radius: 20px;
+        }
+        .certificate-card {
+            background-color: #4d4c73;
+            width: 100%;
+            max-width: 330px;
+            height: 420px;
+            border-radius: 10px;
+            border: 4px solid rgb(136, 143, 240);
+            box-shadow: 0px 0px 16px white;
+        }
+        .certificate-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
         @media (max-width: 768px) {
             .md-gap {
@@ -123,27 +140,27 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link me-3" href="#">About</a>
+                        <a class="nav-link me-3" href="#section-1">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-3" href="#">Skills</a>
+                        <a class="nav-link me-3" href="#section-2">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-3" href="#">Projects</a>
+                        <a class="nav-link me-3" href="#section-3">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-3" href="#">Education</a>
+                        <a class="nav-link me-3" href="#section-4">Education</a>
                     </li>
                     <form class="d-flex">
-                        <button type="button" class="btn btn-certificate">Certificate</button>
+                        <button type="button" id="button-trigger" class="btn btn-certificate">Certificate</button>
                     </form>
                 </ul>
             </div>
         </div>
     </nav>
-    <section id="about" style="background-color: #6B69A3;">
+    <section id="section-1" id="about" style="background-color: #6B69A3;">
         <div class="container py-5">
-            <div class="row align-items-center justify-content-center md-gap">
+            <div class="row align-items-center justify-content-center md-gap py-5">
                 <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center d-lg-block">
                     <img src="arn-pogi.jpg" class="img-fluid rounded-circle arn-profile" style="width: 350px;">
                 </div>
@@ -167,22 +184,23 @@
                         <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fasah.irei%2Fprofilecard%2F%3Figsh%3DMXc3b2NpODZlMjR0cQ%253D%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR15QuacpkV2M4kl3Wno7rp7yeP2DsEsEStb431CjIG2bFb_JggHRqZAtsU_aem_lxEFHqyQxzMQoutsjiuKFQ&h=AT2k3x6ZntrJ518iauid8iVxVTMsWmBYMiVHBhrBZ6hnXQlj-9GjFWFI-owq59kMDXF01HnYDjoW8t_wZBFjXuz7RFUbhs7paDW9iQOFnBxDpGo6-Zv9vR3tZvbslH4-AfI74zOiGkQeOc7yH8kMsQ">
                             <img src="instagram.png" class="icons img-fluid">
                         </a>
-                        <button type="button" class="btn btn-github">Github Profile</button>
+                        <button type="button" id="button-clicked" class="btn btn-github">Github Profile</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <section style="background-color: #4d4c73;">
+    <section id="section-2" style="background-color: #4d4c73;">
         <div class="container py-5">
-            <div class="row gy-4 align-items-center justify-content-center">
+            <div class="row gy-5 align-items-center justify-content-center">
                 <div class="col-12 text-center">
                     <h1 style="color: #8985EC;" class="fw-bold">Skills</h1>
                 </div>
                 <div class="col-12 text-center">
                     <p class="lead" style="color: white;">
-                        Here are some of my skills on which I have learned so far especially the school that I attended in college.
-                        Additionally new languages will learning soon.
+                        I have acquired a diverse set of skills through my college education, particularly in the field of technology.
+                        Throughout my academic journey, I have gained knowledge and hands-on experience in various areas, strengthening
+                        my technical and problem-solving abilities.
                     </p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
@@ -195,7 +213,6 @@
                             <p><img src="lua.png" class="skills-icons img-fluid"><span class="ms-2">Lua</span></p>
                             <p><img src="html-5.png" class="skills-icons img-fluid"><span class="ms-2">Html</span></p>
                             <p><img src="css-3.png" class="skills-icons img-fluid"><span class="ms-2">Css</span></p>
-                            <p><img src="c-sharp.png" class="skills-icons img-fluid"><span class="ms-2">Csharp</span></p>
                         </div>
                     </div>
                 </div>
@@ -206,6 +223,8 @@
                             <p><img src="js.png" class="skills-icons img-fluid"><span class="ms-2">JavaScript</span></p>
                             <p><img src="letter-c.png" class="skills-icons img-fluid"><span class="ms-2">C</span></p>
                             <p><img src="kotlin.png" class="skills-icons img-fluid"><span class="ms-2">Kotlin</span></p>
+                            <p><img src="xml.png" class="skills-icons img-fluid"><span class="ms-2">Xml</span></p>
+                            <p><img src="c-sharp.png" class="skills-icons img-fluid"><span class="ms-2">Csharp</span></p>
                         </div>
                     </div>
                 </div>
@@ -221,14 +240,24 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="skills-card">
+                        <h1 class="fw-bold fs-4" style="color:white">Framework</h1>
+                        <div class="skills-icon-container" style="color: white; font-weight: bold;">
+                            <p><img src="bootstrap-logo-shadow.png" class="skills-icons img-fluid"><span class="ms-2">Bootstrap</span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section style="background-color: #8985EC;">
+    <section id="section-3" style="background-color: #8785bc;">
         <div class="container py-5">
-            <div class="row gy-4 d-flex justify-content-center align-items-center">
+            <div class="row gy-4 d-flex justify-content-center align-items-center flex-column py-5">
                 <div class="col-12 text-center">
                     <h1 class="fw-bold" style="color: white;">Projects</h1>
+                </div>
+                <div class="col-12 text-center">
                     <p class="lead" style="color: white;">
                         Here are the projects I’ve worked on and created so far. These reflect my skills, creativity, and experience in various areas, and I’m excited to share the outcomes of my efforts.
                         Each project represents a unique challenge I tackled, and I’ve learned a great deal throughout the process
@@ -237,19 +266,19 @@
                 <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
-                            <div class="col-md-4">
+                            <div class="col-sm-4">
                                 <img src="MireiKei.png" class="img-fluid rounded-start" style="object-fit: cover; width: 100%; height: 100%;">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-sm-8">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold" style="color: white;">MirekeiBot</h5>
-                                    <form class="d-flex gap-3">
+                                    <form class="d-flex gap-1">
                                         <span class="lang-type" style="color: white;">Python</span>
                                         <span class="lang-type" style="color: white;">Json</span>
                                         <span class="lang-type" style="color: white;">Database</span>
                                     </form>
                                     <p class="card-text" style="color: white;">A.I bot on discord</p>
-                                    <button type="button" class="btn btn-card-button fw-bold" style="color: white;">Click Here</button>
+                                    <button type="button" onclick="mireiKei()" class="btn btn-card-button fw-bold" style="color: white;">Click Here</button>
                                 </div>
                             </div>
                         </div>
@@ -258,19 +287,19 @@
                 <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
-                            <div class="col-md-4">
+                            <div class="col-sm-4">
                                 <img src="arndiary.jpeg" class="img-fluid rounded-start" style="object-fit: cover; width: 100%; height: 100%;">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-sm-8">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold" style="color: white;">ArnDiary</h5>
-                                    <form class="d-flex gap-3">
+                                    <form class="d-flex gap-1">
                                         <span class="lang-type" style="color: white;">Html</span>
                                         <span class="lang-type" style="color: white;">Css</span>
                                         <span class="lang-type" style="color: white;">JavaScript</span>
                                     </form>
                                     <p class="card-text" style="color: white;">Final practical exam in Introduction to Digital Graphics Design.</p>
-                                    <button type="button" class="btn btn-card-button fw-bold" style="color: white;">Click Here</button>
+                                    <button type="button" onclick="arnDiary()" class="btn btn-card-button fw-bold" style="color: white;">Click Here</button>
                                 </div>
                             </div>
                         </div>
@@ -279,10 +308,10 @@
                 <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
-                            <div class="col-md-4">
+                            <div class="col-sm-4">
                                 <img src="Fluorohydride.png" class="img-fluid rounded-start" style="object-fit: cover; width: 100%; height: 100%;">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-sm-8">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold" style="color: white;">Fluorohydride</h5>
                                     <form class="d-flex gap-3">
@@ -292,7 +321,7 @@
                                         <span class="lang-type" style="color: white;">Database</span>
                                     </form>
                                     <p class="card-text" style="color: white;">A collaboration project with other countries that involes in YGOPro Card Game.</p>
-                                    <button type="button" class="btn btn-card-button fw-bold" style="color: white;">Click Here</button>
+                                    <button type="button" onclick="fluro()" class="btn btn-card-button fw-bold" style="color: white;">Click Here</button>
                                 </div>
                             </div>
                         </div>
@@ -301,19 +330,40 @@
                 <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
-                            <div class="col-md-4">
+                            <div class="col-sm-4">
                                 <img src="C.png" class="img-fluid rounded-start" style="object-fit: cover; width: 100%; height: 100%;">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-sm-8">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold" style="color: white;">STI Zero Based Calculator</h5>
-                                    <form class="d-flex gap-3">
+                                    <form class="d-flex gap-1">
                                         <span class="lang-type" style="color: white;">HTML</span>
                                         <span class="lang-type" style="color: white;">CSS</span>
                                         <span class="lang-type" style="color: white;">JavaScript</span>
                                     </form>
                                     <p class="card-text" style="color: white;">Computing the final grades in each subject.</p>
-                                    <button type="button" class="btn btn-card-button fw-bold" style="color: white;">Click Here</button>
+                                    <button type="button" onclick="stiZero()" class="btn btn-card-button fw-bold" style="color: white;">Click Here</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-sm-4">
+                                <img src="indef.png" class="img-fluid rounded-start" style="object-fit: cover; width: 100%; height: 100%;">
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold" style="color: white;">Indev Arn</h5>
+                                    <form class="d-flex gap-1">
+                                        <span class="lang-type" style="color: white;">HTML</span>
+                                        <span class="lang-type" style="color: white;">CSS</span>
+                                        <span class="lang-type" style="color: white;">JavaScript</span>
+                                    </form>
+                                    <p class="card-text" style="color: white;">My previous Web Portfolio with pure hardcoded css</p>
+                                    <button type="button" onclick="indevArn()" class="btn btn-card-button fw-bold" style="color: white;">Click Here</button>
                                 </div>
                             </div>
                         </div>
@@ -322,8 +372,136 @@
             </div>
         </div>
     </section>
+    <section id="section-4" style="background-color: #8c72bd;">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center align-items-center flex-column gy-5">
+                <div class="col-12 text-center">
+                    <h1 style="color: #e8d1fc;" class="fw-bold">Education</h1>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="lead" style="color: white;">
+                        My education has been a transformative journey of self-discovery and continuous growth,
+                        shaping both my knowledge and outlook on life. Along the way, I have faced challenges that tested my resilience
+                        and celebrated achievements that fueled my passion for learning.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-sm-4">
+                                <img src="Holy.jpeg" class="img-fluid rounded-start" style="object-fit: cover; width: 100%; height: 100%;">
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold" style="color: white;">Holy Family Montessori (SHS)</h5>
+                                    <span class="lang-type" style="color: white;">from 2020 to 2023</span>
+                                    <p class="card-text" style="color: white;">
+                                        Senior High School (STEM) graduated at San Jose Batangas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-sm-4">
+                                <img src="Holy.jpeg" class="img-fluid rounded-start" style="object-fit: cover; width: 100%; height: 100%;">
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold" style="color: white;">Holy Family Montessori (HS)</h5>
+                                    <span class="lang-type" style="color: white;">from 2017 to 2020</span>
+                                    <p class="card-text" style="color: white;">
+                                        High School graduated at San Jose Batangas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-sm-4">
+                                <img src="Ozaeta.jpeg" class="img-fluid rounded-start" style="object-fit: cover; width: 100%; height: 100%;">
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold" style="color: white;">Roman Ozaeta Memorial School</h5>
+                                    <span class="lang-type" style="color: white;">2012-2017</span>
+                                    <p class="card-text" style="color: white;">Elementary graduated at Lumil, San Jose Batangas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-5" style="background-color: #5c5c8e;">
+        <div class="container py-5 gy-5">
+            <div class="row d-flex justify-content-center align-items-center gy-5">
+                <div class="col-12 text-center">
+                    <h1 style="color: white;" class="fw-bold">Certificates</h1>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="lead" style="color: white;">
+                        My education has been a transformative journey of self-discovery and continuous growth,
+                        shaping both my knowledge and outlook on life. Along the way, I have faced challenges that tested my resilience
+                        and celebrated achievements that fueled my passion for learning.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="certificate-card">
+                        <div class="certificate-container gap-3">
+                            <img src="certificate-c.png" class="img-fluid" style="width: 280px; height: 150px;">
+                            <h5 class="text-center fw" style="color: white;">Introduction to C++</h1>
+                            <p class="text-center" style="color: white;">
+                                Online course certification about learning the basics of C++
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="certificate-card">
+                        <div class="certificate-container gap-3">
+                            <img src="certificate-java.jpg" class="img-fluid" style="width: 280px; height: 150px;">
+                            <h5 class="text-center fw" style="color: white;">Computer Programing 2</h1>
+                            <p class="text-center" style="color: white;">
+                                STI Subject course certification about learning the basics of Java
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        function mireiKei() {
+            window.open("https://github.com/ArnChristian127/MireiKeiBOT");
+        }
+        function arnDiary() {
+            window.open("https://arn-diary.vercel.app/");
+        }
+        function fluro() {
+            window.open("https://github.com/Fluorohydride/ygopro-pre-script");
+        }
+        function stiZero() {
+            window.open("https://zero-based-calculator.vercel.app/");
+        }
+        function indevArn() {
+            window.open("https://indev-arn.vercel.app/");
+        }
+    </script>
+    <script>
+        document.getElementById("button-trigger").addEventListener("click", function() {
+            document.getElementById("section-5").scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
     <script>
         var typed = new Typed('#auto-typer', {
             strings: ['STI College Student', 'Programmer', 'Cosplayer', 'Gamer'],
